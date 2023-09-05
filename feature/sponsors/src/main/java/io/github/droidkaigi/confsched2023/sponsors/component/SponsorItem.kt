@@ -31,7 +31,7 @@ fun SponsorItem(
 ) {
     Image(
         painter = previewOverride(previewPainter = { rememberVectorPainter(image = Icons.Default.Image) }) {
-            rememberAsyncImagePainter(sponsor.logo)
+            rememberAsyncImagePainter(sponsor.logo, maxImageSize = 300)
         },
         contentDescription = sponsor.name,
         modifier = modifier
