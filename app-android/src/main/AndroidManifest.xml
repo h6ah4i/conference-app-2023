@@ -4,6 +4,9 @@
 
     <uses-permission android:name="android.permission.INTERNET" />
 
+    <!-- Compose ImageLoader requests API level 24+, but it seems work on 23 too...? -->
+    <uses-sdk tools:overrideLibrary="io.github.qdsfdhvh.imageloader" />
+
     <application
         android:name=".App"
         android:allowBackup="true"
